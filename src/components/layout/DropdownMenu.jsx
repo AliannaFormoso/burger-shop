@@ -8,7 +8,8 @@ function DropdownMenu() {
     const navs = [
       { name: "Login", path: "/login" },
       {name:"Orders", path:"/myorders"},
-      {name:"Logout", path:"/login"}
+      {name:"Log Out", path:"/login"},
+      
       
     ];
     setNavLinks(navs);
@@ -16,15 +17,16 @@ function DropdownMenu() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div className="container">
+      <nav className="navbar navbar-expand-sm" style={{ backgroundColor: "inherit" }}>
+        <div className="container" >
           <a className="navbar-brand" href="#">
           
           </a>
           <div class="btn-group">
             <button
               type="button"
-              class="btn btn-primary dropdown-toggle"
+              class="btn btn-danger dropdown-toggle"
+              style={{ backgroundColor: "#9C003C" }}
               data-bs-toggle="dropdown"
               data-bs-display="static"
               aria-expanded="false"
